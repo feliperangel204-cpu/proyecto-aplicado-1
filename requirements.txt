@@ -44,6 +44,8 @@ six==1.17.0
 stack-data==0.6.3
 statsmodels==0.15.0
 threadpoolctl==3.7.0
+torch==2.15.0
+torchvision==0.29.2
 tornado==6.5.10
 traitlets==5.16.1
 typing_extensions==4.16.0
