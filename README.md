@@ -103,7 +103,7 @@ En la verificación de la referencia esperada (3.21), los crosspackings que pasa
 |---|---|---|---|
 | v1, red sin lectores de texto | Colab, CPU Xeon de 2 núcleos | 235,0 ms | 47,3 ms |
 | v1, red sin lectores de texto | Colab, GPU T4 | 40,0 ms | 34,2 ms |
-| v2, red y lectores de texto | Mac M4 con MPS, 3 repeticiones | 324,8 ± 0,7 ms | 318,5 ± 0,7 ms |
+| v2, red y lectores de texto | Mac M4 con MPS, 3 repeticiones | 320,8 ± 0,7 ms | 317,1 ± 0,7 ms |
 
 Casi todo el tiempo de la v2 está en el OCR. Entre sesiones distintas, la misma cadena varió de 316 a 345 ms.
 
