@@ -5,7 +5,7 @@ Empresa aliada: MV Perception (Cali)
 
 Equipo: Luis Felipe Rangel · Daniel Alarcón · Edward Atehortua · Angie Tamara · Frank Mendoza
 
-**Estado al 13 de noviembre de 2026.** La versión 2 cumple la meta de exactitud en validación (96,4 % con ResNet18), pero esa validación solo puede medir 4 clases y la prueba todavía no se ha mirado. La cadena completa tarda unos 320 ms en el percentil 95 en un Mac M4, por encima de los 240 ms de la meta; falta medirla en GPU y en el equipo de la línea.
+**Estado al 18 de noviembre de 2026.** La versión 2 ya se midió en la prueba (sección 3.24 del cuaderno): en un día nuevo, la cadena E3c acierta 93,3 % con MobileNetV3-Small y 87,0 % con ResNet18, frente a unos 63 % de la versión 1. No cumple la meta de 95 %. La cadena completa tarda unos 320 ms en el percentil 95 en un Mac M4, por encima de los 240 ms de la meta; falta medirla en el equipo de la línea (un Jetson).
 
 ---
 
@@ -103,7 +103,7 @@ En la verificación de la referencia esperada (3.21), los crosspackings que pasa
 |---|---|---|---|
 | v1, red sin lectores de texto | Colab, CPU Xeon de 2 núcleos | 235,0 ms | 47,3 ms |
 | v1, red sin lectores de texto | Colab, GPU T4 | 40,0 ms | 34,2 ms |
-| v2, red y lectores de texto | Mac M4 con MPS, 3 repeticiones | 320,8 ± 0,7 ms | 317,1 ± 0,7 ms |
+| v2, red y lectores de texto | Mac M4 con MPS, 3 repeticiones | 320,8 ± 0,7 ms | 317,2 ± 0,7 ms |
 
 Casi todo el tiempo de la v2 está en el OCR. Entre sesiones distintas, la misma cadena varió de 316 a 345 ms.
 
